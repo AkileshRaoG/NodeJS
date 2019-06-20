@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<% include ../views/common/head %>
+<body>
+  
+  <header>
+    <% include ../views/common/header %>
+  </header>
+  
+  <div class="summary">
+    <h2 align="center">Help us make you feel special on your Birthday.</h2>
+    <h3 align="center">Managers are requested to notify the new joinees to register at the earliest.</h3>
+  </div>
+  <form action="/registerEmployee" method="get">
+    <div class="container" align="center">
+      <h1>Register</h1>
+      <p>Please fill in this form to register.</p>
+      <label><b>Name</b></label>
+      <input type="text" class="addemployeename" name="employeeName" placeholder="What's your name?" required>
+      <br>
+      <label><b>Birthdate</b></label> 
+      <input type="date" class="addemployeemail" name="Birthdate">
+      <br>
+      <label><b>Email</b></label>
+      <input type="email" class="addemployeemail" placeholder="Don't worry, we won't spam you!" name="email" required>
+      <br>
+      <button type="submit" class="registerbtn">Register</button>
+    </div>
+  </form>
+  
+  <footer>
+    <% include ../views/common/footer %>
+  </footer>
+
+
+</body>
+</html> 

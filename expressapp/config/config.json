@@ -1,0 +1,7 @@
+{
+	"elasticsearch_ip": "localhost",
+	"elasticsearch_index_name" : "employee_info",
+	"elasticsearch_doc_type" : "employee",
+	"elasticsearch_ip_port": 9200,
+	"server_port" : 3000
+}

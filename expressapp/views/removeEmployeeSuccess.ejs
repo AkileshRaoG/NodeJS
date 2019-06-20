@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<% include ../views/common/head %>
+<body>
+
+	<header>
+		<% include ../views/common/header %>
+	</header>
+	<form action="/remove" method="get">
+		<div class="container" align="center">
+			<h1 align="center">Attention!! <br> Once removed, well we can add you back again...</h1>
+			<hr><br><br><br><br>
+			<label><b><h3><%= employeeEmail %> removed successfully</h3></b></label><br>
+			<button type="submit" class="removebtn">OK</button>
+		</div>  
+	</form>
+	<footer>
+		<% include ../views/common/footer %>
+	</footer>
+</body>
+
+</html> 

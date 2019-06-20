@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<% include ../views/common/head %>
+<body>
+  <header>
+    <% include ../views/common/header %>
+  </header>
+  <div class="container" align="center">
+    <form action="/searchEmployee" method="get"> 
+      <input class="searchemployeename" type="text" name="employeename" placeholder="Search Employee (name) of choice..." required>
+      <input value="Search" title="Search" type="submit" class="searchbtn"> 
+    </form>    
+  </div>
+  <footer>
+    <% include ../views/common/footer %>
+  </footer>
+</body>
+
+</html> 

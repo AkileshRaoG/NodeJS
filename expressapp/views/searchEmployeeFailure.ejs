@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<% include ../views/common/head %>
+<body>
+
+	<header>
+		<% include ../views/common/header %>
+	</header>
+	<div class="container" align="center">
+		<form action="/searchEmployee" method="get"> 
+			<input class="searchemployeename" type="text" name="employeename" value="<%= employeeName %>">
+			<input value="Search" title="Search" type="submit" class="searchbtn"> 
+		</form>    
+	</div>
+	<div class="search-employee-name-container">
+		<div class="search-employee-name-box text-center">
+			<p class="search-employee-name"><%= employeeName %></p>
+			<ul class="features-list">
+				<li><strong>Ooops....<br>Employee not found in our database! </strong></li>
+			</ul>
+		</div>
+	</div>
+	<footer>
+		<% include ../views/common/footer %>
+	</footer>
+</body>
+
+</html> 
